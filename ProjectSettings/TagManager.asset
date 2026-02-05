@@ -12,10 +12,10 @@ TagManager:
   - Water
   - UI
   - 
-  - 
-  - 
-  - 
-  - 
+  - background
+  - Scene elements
+  - Player
+  - UI
   - 
   - 
   - 
@@ -40,4 +40,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: background
+    uniqueID: 2313785371
+    locked: 0
+  - name: Scene elements
+    uniqueID: 1678752185
+    locked: 0
+  - name: Player
+    uniqueID: 3297112333
+    locked: 0
+  - name: UI
+    uniqueID: 3343632859
+    locked: 0
+  - name: Dialogue
+    uniqueID: 2500464725
     locked: 0
