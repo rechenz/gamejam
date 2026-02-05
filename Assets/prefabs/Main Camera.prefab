@@ -109,8 +109,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameArea:
-    width: 90
-    height: 50
+    width: 19.2
+    height: 10.7
     gizmoColor: {r: 0, g: 1, b: 1, a: 1}
   settings:
     horizontalFit: 0.5

@@ -46,6 +46,11 @@ public class DoorTeleporter : MonoBehaviour
     [Tooltip("传送门颜色")]
     public Color gizmoColor = new Color(0.2f, 0.8f, 1f, 0.5f);
 
+    [Header("是否在传送门范围内")]
+    public bool isInRange = false;
+
+    [Header("角色对象")]
+    public GameObject player;
     public enum EnterDirection
     {
         Any,    // 任何方向
@@ -126,13 +131,16 @@ public class DoorTeleporter : MonoBehaviour
             }
             return;
         }
-
+        Debug.Log("玩家接近传送门");
+        isInRange = true;
+        player = other.gameObject;
         // 开始传送
-        teleportCoroutine = StartCoroutine(TeleportCoroutine(other.gameObject));
+        // teleportCoroutine = StartCoroutine(TeleportCoroutine(other.gameObject));
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
+        isInRange = false;
         // 如果玩家在传送前离开，取消传送
         if (isTeleporting && other.CompareTag(triggerTag))
         {
@@ -362,6 +370,19 @@ public class DoorTeleporter : MonoBehaviour
             colliderSize.y * lossyScale.y,
             0
         );
+    }
+
+    void Update()
+    {
+        if (isTeleporting) return;
+        if (directionalTrigger)
+        {
+
+        }
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            teleportCoroutine = StartCoroutine(TeleportCoroutine(player));
+        }
     }
 
     // 编辑器工具
