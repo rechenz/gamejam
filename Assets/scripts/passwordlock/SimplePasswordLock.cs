@@ -40,8 +40,8 @@ public class SimplePasswordLock : MonoBehaviour
             audioSource = gameObject.AddComponent<AudioSource>();
 
         // 初始隐藏面板
-        if (lockPanel != null)
-            lockPanel.SetActive(false);
+        // if (lockPanel != null)
+        //     lockPanel.SetActive(false);
 
         // 设置按钮事件
         SetupButtons();
@@ -294,6 +294,25 @@ public class SimplePasswordLock : MonoBehaviour
         {
             audioSource.PlayOneShot(clip);
         }
+    }
+
+    public void SetUnlockObjects(GameObject[] unlockObjs, GameObject[] lockObjs)
+    {
+        unlockObjects = unlockObjs;
+        lockObjects = lockObjs;
+    }
+
+    public void SetupDynamicReferences(Button[] numButtons, Button confirmBtn, Button clearBtn,
+                                  TMP_Text displayTxt, TMP_Text statusTxt)
+    {
+        numberButtons = numButtons;
+        confirmButton = confirmBtn;
+        clearButton = clearBtn;
+        displayText = displayTxt;
+        statusText = statusTxt;
+
+        // 重新设置按钮事件
+        SetupButtons();
     }
 
     // ========== 事件 ==========

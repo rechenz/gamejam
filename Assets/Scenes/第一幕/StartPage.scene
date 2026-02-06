@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useDoorSpawnPosition: 1
-  defaultPosition: {x: 0, y: 0}
+  defaultPosition: {x: 0, y: -2}
 --- !u!4 &433350318
 Transform:
   m_ObjectHideFlags: 0
@@ -320,7 +320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetScene: RuinsPassway
-  spawnPosition: {x: 0, y: 0}
+  spawnPosition: {x: -8.3, y: -2}
   colliderOffset: {x: 0, y: 0}
   colliderSize: {x: 0.68, y: 1.05}
   triggerTag: Player
@@ -657,22 +657,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
-    - target: {fileID: 4650173742355974909, guid: 7f83fc42869183a4991257c71726862a, type: 3}
-      propertyPath: gameArea.width
-      value: 19.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4650173742355974909, guid: 7f83fc42869183a4991257c71726862a, type: 3}
-      propertyPath: gameArea.height
-      value: 10.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4650173742355974909, guid: 7f83fc42869183a4991257c71726862a, type: 3}
-      propertyPath: settings.horizontalFit
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6367415959361047689, guid: 7f83fc42869183a4991257c71726862a, type: 3}
-      propertyPath: m_HDR
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -692,11 +676,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6899024902456603440, guid: 38c2bd6a9acd8ee48be79b6dbf9fe289, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.6793
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6899024902456603440, guid: 38c2bd6a9acd8ee48be79b6dbf9fe289, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.6604
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6899024902456603440, guid: 38c2bd6a9acd8ee48be79b6dbf9fe289, type: 3}
       propertyPath: m_LocalPosition.x

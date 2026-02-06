@@ -164,6 +164,7 @@ GameObject:
   - component: {fileID: 2995378827502018224}
   - component: {fileID: 3552745016417195176}
   - component: {fileID: 5578421169505091900}
+  - component: {fileID: 3406409111234360166}
   m_Layer: 5
   m_HasEditorInfo: 1
   m_Name: Dialogue
@@ -256,6 +257,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &3406409111234360166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474046873499078011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 944b8686d0d22124ea891ecf616bfe3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maincamera: {fileID: 0}
 --- !u!1 &1285732702062891150
 GameObject:
   m_ObjectHideFlags: 0

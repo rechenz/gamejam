@@ -195,14 +195,14 @@ public class DoorTeleporter : MonoBehaviour
             yield return new WaitForSeconds(teleportDelay);
         }
 
-        // 检查玩家是否还在触发区域内
-        if (!IsPlayerInTrigger(player))
-        {
-            Debug.Log($"{gameObject.name}: 玩家已离开传送区域，取消传送", this);
-            EnablePlayer(player);
-            isTeleporting = false;
-            yield break;
-        }
+        // // 检查玩家是否还在触发区域内
+        // if (!IsPlayerInTrigger(player))
+        // {
+        //     Debug.Log($"{gameObject.name}: 玩家已离开传送区域，取消传送", this);
+        //     EnablePlayer(player);
+        //     isTeleporting = false;
+        //     yield break;
+        // }
 
         // 保存重生位置
         SaveSpawnPosition();
@@ -375,13 +375,24 @@ public class DoorTeleporter : MonoBehaviour
     void Update()
     {
         if (isTeleporting) return;
-        if (directionalTrigger)
-        {
 
-        }
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F) && isInRange)
         {
-            teleportCoroutine = StartCoroutine(TeleportCoroutine(player));
+            if (player != null)
+            {
+                Debug.Log($"准备传送玩家: {player.name}");
+                teleportCoroutine = StartCoroutine(TeleportCoroutine(player));
+            }
+            else
+            {
+                Debug.LogError("玩家对象为空！");
+            }
+        }
+
+        // 调试信息
+        if (showDebug && Time.frameCount % 60 == 0) // 每秒一次
+        {
+            Debug.Log($"状态: isInRange={isInRange}, player={player != null}, isTeleporting={isTeleporting}");
         }
     }
 
