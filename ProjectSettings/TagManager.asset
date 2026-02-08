@@ -50,6 +50,9 @@ TagManager:
   - name: Player
     uniqueID: 3297112333
     locked: 0
+  - name: preScene
+    uniqueID: 545804577
+    locked: 0
   - name: UI
     uniqueID: 3343632859
     locked: 0

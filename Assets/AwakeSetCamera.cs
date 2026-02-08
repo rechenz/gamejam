@@ -10,6 +10,7 @@ public class AwakeSetCamera : MonoBehaviour
         maincamera = Camera.main;
         Canvas canvass = GetComponent<Canvas>();
         canvass.worldCamera = maincamera;
+        canvass.sortingLayerName = "UI";
     }
     // Start is called before the first frame update
     void Start()

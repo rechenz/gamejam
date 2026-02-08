@@ -7,6 +7,13 @@ public class SimpleLockedDoor : MonoBehaviour
     public bool isInRange;
     private bool inLock = false;
     public DoorTeleporter doorTeleporter;
+    private GameObject currentLockInstance;
+
+    public GameObject Background1;
+    public GameObject Background2;
+    private SpriteRenderer Background1Sprite;
+    private SpriteRenderer Background2Sprite;
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
@@ -27,8 +34,8 @@ public class SimpleLockedDoor : MonoBehaviour
     void useLock()
     {
         // 1. 创建密码锁
-        GameObject lockInstance = Instantiate(passwordLockPrefab);
-        SimplePasswordLock lockScript = lockInstance.GetComponent<SimplePasswordLock>();
+        currentLockInstance = Instantiate(passwordLockPrefab);
+        SimplePasswordLock lockScript = currentLockInstance.GetComponent<SimplePasswordLock>();
 
         // 2. 设置密码
         lockScript.SetPassword(doorPassword);
@@ -42,7 +49,10 @@ public class SimpleLockedDoor : MonoBehaviour
             Debug.Log("门已解锁！");
             doorTeleporter.enabled = true;
             this.enabled = false;
-            Destroy(lockInstance);
+            Background1Sprite.enabled = false;
+            Background2Sprite.enabled = true;
+            Destroy(currentLockInstance);
+            currentLockInstance = null;
         };
     }
 
@@ -50,6 +60,8 @@ public class SimpleLockedDoor : MonoBehaviour
     {
         doorTeleporter = GetComponent<DoorTeleporter>();
         doorTeleporter.enabled = false;
+        Background1Sprite = Background1.GetComponent<SpriteRenderer>();
+        Background2Sprite = Background2.GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -58,6 +70,15 @@ public class SimpleLockedDoor : MonoBehaviour
         {
             useLock();
             inLock = true;
+        }
+        if (inLock && Input.GetKeyDown(KeyCode.Escape))
+        {
+            inLock = false;
+            if (currentLockInstance != null)
+            {
+                Destroy(currentLockInstance);
+                currentLockInstance = null;
+            }
         }
     }
 }
