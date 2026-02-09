@@ -4,7 +4,7 @@ public class SimpleStoneTablet : MonoBehaviour
 {
     public GameObject canvas;
     public KeyCode interactionKey = KeyCode.F;
-
+    public bool isInpointView;
     private bool playerInRange = false;
 
     void Start()

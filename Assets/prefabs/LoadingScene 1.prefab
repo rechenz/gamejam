@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:yousandi.cn,2023:
+--- !u!1 &5661820987595363064
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 7
+  m_Component:
+  - component: {fileID: 5840645394955059439}
+  - component: {fileID: 8158889346080379052}
+  m_Layer: 0
+  m_HasEditorInfo: 1
+  m_Name: LoadingScene 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5840645394955059439
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5661820987595363064}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.0028896, y: -0.33223182, z: -0.0022099237}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8158889346080379052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5661820987595363064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac5b58423b52c7840923694544ffcf53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadingScreen: {fileID: 8434295963868000807, guid: ce864af8453910340862a59851c879cd, type: 3}
+  progressSlider: {fileID: 0}
+  progressText: {fileID: 0}
+  tipText: {fileID: 0}
+  backgroundImage: {fileID: 0}
+  loadingIcon: {fileID: 0}
+  fadeDuration: 0.5
+  minLoadingTime: 2
+  showTips: 1
+  loadingTips:
+  - "\u6B63\u5728\u521D\u59CB\u5316\u6E38\u620F\u7CFB\u7EDF..."
+  - "\u52A0\u8F7D\u573A\u666F\u8D44\u6E90..."
+  - "\u51C6\u5907\u6E38\u620F\u5BF9\u8C61..."
+  - "\u521D\u59CB\u5316\u811A\u672C\u7EC4\u4EF6..."
+  - "\u8BF7\u7A0D\u5019..."
+  requiredScripts:
+  - SimpleStateManager
+  - SceneLoader
