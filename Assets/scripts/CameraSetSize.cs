@@ -5,8 +5,8 @@ public class AdaptiveGameCamera : MonoBehaviour
     [System.Serializable]
     public class GameArea
     {
-        public float width = 90f;
-        public float height = 50f;
+        public float width = 19.2f;
+        public float height = 10.7f;
         public Color gizmoColor = Color.cyan;
 
         public float Aspect => width > 0 && height > 0 ? width / height : 1f;
