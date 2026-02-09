@@ -13,6 +13,9 @@ GameObject:
   - component: {fileID: 8842498914292235494}
   - component: {fileID: 1017812668963273740}
   - component: {fileID: 8549111957131010873}
+  - component: {fileID: -3051171740833816627}
+  - component: {fileID: 5844908334533554625}
+  - component: {fileID: -4310747508904762784}
   m_Layer: 5
   m_HasEditorInfo: 1
   m_Name: UI
@@ -51,7 +54,7 @@ Canvas:
   m_GameObject: {fileID: 562158328181084850}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 6367415959361047689, guid: 7f83fc42869183a4991257c71726862a, type: 3}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -62,7 +65,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: -951334437
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!114 &8842498914292235494
@@ -122,6 +125,48 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &-3051171740833816627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562158328181084850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 944b8686d0d22124ea891ecf616bfe3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maincamera: {fileID: 0}
+--- !u!114 &5844908334533554625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562158328181084850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d73f1ac899801804daa720e4daad5562, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  costTime: 15
+  isInpointView: 0
+--- !u!114 &-4310747508904762784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562158328181084850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4c96670f2fafef458a28d763d41a2f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hpFillImage: {fileID: 0}
+  hpText: {fileID: 0}
+  pointText: {fileID: 0}
 --- !u!1 &1460673007533958833
 GameObject:
   m_ObjectHideFlags: 0

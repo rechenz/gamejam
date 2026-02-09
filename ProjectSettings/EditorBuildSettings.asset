@@ -26,9 +26,6 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/\u7B2C\u4E00\u5E55/fileroom.scene"
     guid: 5981f012a5a76b144b67534a014d7119
-  - enabled: 1
-    path: "Assets/Scenes/\u7B2C\u4E00\u5E55/roomPassway.scene"
-    guid: 6ffffc631bc7b9e499b13b5bcfb6212b
   m_BuildProfiles: []
   m_configObjects: {}
   m_SlimFeaturesWeixinMiniGame:
