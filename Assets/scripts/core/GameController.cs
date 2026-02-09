@@ -15,12 +15,30 @@ public class SimpleStateManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-            Debug.Log("状态管理器已初始化");
+            Debug.Log("SimpleStateManager已初始化");
+
+            // 标记脚本已加载
+            if (LoadingScreenManager.Instance != null)
+            {
+                LoadingScreenManager.Instance.MarkScriptLoaded("SimpleStateManager");
+            }
         }
         else
         {
             Destroy(gameObject);
         }
+    }
+
+    void Start()
+    {
+        Debug.Log("SimpleStateManager完全就绪");
+    }
+
+    private System.Collections.IEnumerator NotifyReady()
+    {
+        // 等待一帧确保完全初始化
+        yield return null;
+        Debug.Log("SimpleStateManager完全就绪");
     }
 
     // ========== 基础状态操作 ==========

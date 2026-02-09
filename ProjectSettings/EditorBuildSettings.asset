@@ -12,14 +12,14 @@ EditorBuildSettings:
     path: Assets/Scenes/CoreScene.scene
     guid: aef271051dc5f8040ba9f8bb6c358965
   - enabled: 1
+    path: Assets/Scenes/Home.scene
+    guid: 4256599187259994399683388d69d0ec
+  - enabled: 1
     path: "Assets/Scenes/\u7B2C\u4E00\u5E55/StartPage.scene"
     guid: b6a38006246e5f04eba31a1c1d0b6024
   - enabled: 1
     path: "Assets/Scenes/\u7B2C\u4E00\u5E55/RuinsPassway.scene"
     guid: b3eb5453e59584b48a36908a8b8531d7
-  - enabled: 1
-    path: Assets/Scenes/Home.scene
-    guid: 4256599187259994399683388d69d0ec
   - enabled: 1
     path: "Assets/Scenes/\u7B2C\u4E00\u5E55/storeroom.scene"
     guid: f4553dc0c11f3ce46a453cfdb591be44

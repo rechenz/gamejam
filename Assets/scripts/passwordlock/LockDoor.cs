@@ -3,7 +3,7 @@ using UnityEngine;
 public class SimpleLockedDoor : MonoBehaviour
 {
     public GameObject passwordLockPrefab; // 拖入密码锁预制体
-    public string doorPassword = "1111";
+    public string doorPassword = "513";
     public bool isInRange;
     private bool inLock = false;
     public DoorTeleporter doorTeleporter;
@@ -14,6 +14,7 @@ public class SimpleLockedDoor : MonoBehaviour
     private SpriteRenderer Background1Sprite;
     private SpriteRenderer Background2Sprite;
 
+    public string LockDoorID = "LockDoor_001";
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
@@ -47,13 +48,19 @@ public class SimpleLockedDoor : MonoBehaviour
         lockScript.OnUnlock += () =>
         {
             Debug.Log("门已解锁！");
-            doorTeleporter.enabled = true;
-            this.enabled = false;
-            Background1Sprite.enabled = false;
-            Background2Sprite.enabled = true;
-            Destroy(currentLockInstance);
-            currentLockInstance = null;
+            Unlock();
         };
+    }
+
+    void Unlock()
+    {
+        doorTeleporter.enabled = true;
+        this.enabled = false;
+        Background1Sprite.enabled = false;
+        Background2Sprite.enabled = true;
+        Destroy(currentLockInstance);
+        currentLockInstance = null;
+        SimpleStateManager.Instance.SaveBool(LockDoorID, "isOpen", true);
     }
 
     void Start()
@@ -62,6 +69,11 @@ public class SimpleLockedDoor : MonoBehaviour
         doorTeleporter.enabled = false;
         Background1Sprite = Background1.GetComponent<SpriteRenderer>();
         Background2Sprite = Background2.GetComponent<SpriteRenderer>();
+        bool isOpen = SimpleStateManager.Instance.LoadBool(LockDoorID, "isOpen", false);
+        if (isOpen)
+        {
+            Unlock();
+        }
     }
 
     void Update()

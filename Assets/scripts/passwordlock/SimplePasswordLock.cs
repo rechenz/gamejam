@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections;
+// using UnityEngine.UIElements;
 
 public class SimplePasswordLock : MonoBehaviour
 {
@@ -45,9 +46,9 @@ public class SimplePasswordLock : MonoBehaviour
 
         // 设置按钮事件
         SetupButtons();
-
+        passwordLength = correctPassword.Length;
         // 更新状态显示
-        UpdateStatus("请输入" + passwordLength + "位密码");
+        UpdateStatus("请输入密码");
     }
 
     void SetupButtons()
@@ -103,7 +104,7 @@ public class SimplePasswordLock : MonoBehaviour
     {
         if (currentInput.Length != passwordLength)
         {
-            UpdateStatus("请输入" + passwordLength + "位密码");
+            UpdateStatus("请输入密码");
             return;
         }
 
@@ -271,7 +272,7 @@ public class SimplePasswordLock : MonoBehaviour
             displayText.color = Color.white;
 
         UpdateDisplay();
-        UpdateStatus("请输入" + passwordLength + "位密码");
+        UpdateStatus("请输入密码");
     }
 
     public bool IsUnlocked()
@@ -283,7 +284,7 @@ public class SimplePasswordLock : MonoBehaviour
     {
         correctPassword = newPassword;
         passwordLength = newPassword.Length;
-        UpdateStatus("请输入" + passwordLength + "位密码");
+        UpdateStatus("请输入密码");
     }
 
     // ========== 工具方法 ==========
