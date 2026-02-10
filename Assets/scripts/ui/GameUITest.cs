@@ -13,11 +13,13 @@ namespace Game.Test
         
         [Header("测试设置")]
         [SerializeField] private int maxHP = 100;
+        [SerializeField] private int maxPoint = 10;
         [SerializeField] private int damageAmount = 10;
         [SerializeField] private int healAmount = 10;
-        [SerializeField] private int pointAmount = 100;
+        [SerializeField] private int pointAmount = 1;
         
         private int currentHP;
+        private int currentPoint;
 
         void Start()
         {
@@ -26,11 +28,14 @@ namespace Game.Test
                 gameUI = FindObjectOfType<GameUI>();
             
             // 初始化
-            gameUI.InitHP(maxHP);
-            gameUI.InitPoint();
             currentHP = maxHP;
+            currentPoint = maxPoint;
             
-            Debug.Log("测试开始：按 H 加血，J 扣血，K 加分");
+            gameUI.UpdateMaxHP(maxHP);
+            gameUI.UpdateHP(currentHP);
+            gameUI.SetPoint(currentPoint);
+            
+            Debug.Log("测试开始：按 H 加血，J 扣血，K 加Point，L 减Point，R 重置");
         }
 
         void Update()
@@ -51,19 +56,38 @@ namespace Game.Test
                 Debug.Log($"扣血：{currentHP}/{maxHP}");
             }
             
-            // K键 - 加分
+            // K键 - 加Point
             if (Input.GetKeyDown(KeyCode.K))
             {
-                gameUI.AddPoint(pointAmount);
-                Debug.Log($"当前分数：{gameUI.GetCurrentPoint()}");
+                currentPoint += pointAmount;
+                gameUI.SetPoint(currentPoint);
+                Debug.Log($"当前Point：{gameUI.GetCurrentPoint()}");
+            }
+            
+            // L键 - 减Point（模拟UpdateUI的消耗逻辑）
+            if (Input.GetKeyDown(KeyCode.L))
+            {
+                if (currentPoint > 0)
+                {
+                    currentPoint -= 1;
+                    gameUI.AddPoint(-1);
+                }
+                else
+                {
+                    currentHP = Mathf.Max(currentHP - 1, 0);
+                    gameUI.UpdateHP(currentHP);
+                }
+                Debug.Log($"Point:{currentPoint}, HP:{currentHP}");
             }
             
             // R键 - 重置
             if (Input.GetKeyDown(KeyCode.R))
             {
                 currentHP = maxHP;
-                gameUI.InitHP(maxHP);
-                gameUI.InitPoint();
+                currentPoint = maxPoint;
+                gameUI.UpdateMaxHP(maxHP);
+                gameUI.UpdateHP(currentHP);
+                gameUI.SetPoint(currentPoint);
                 Debug.Log("重置完成");
             }
         }

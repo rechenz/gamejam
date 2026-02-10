@@ -9,35 +9,46 @@ namespace Game.UI
     /// </summary>
     public class GameUI : MonoBehaviour
     {
+        // 单例
+        public static GameUI Instance { get; private set; }
+        
         [Header("HP组件")]
         [SerializeField] private Image hpFillImage;
         [SerializeField] private TextMeshProUGUI hpText;
-
+        
         [Header("Point组件")]
         [SerializeField] private TextMeshProUGUI pointText;
 
-        // 当前数值（仅用于记录，不直接控制逻辑）
+        // 内部存储的数值（供Get方法使用）
         private int currentHP;
         private int maxHP;
         private int currentPoint;
 
+        private void Awake()
+        {
+            if (Instance != null && Instance != this)
+            {
+                Destroy(gameObject);
+                return;
+            }
+            Instance = this;
+        }
+
         #region HP接口
 
         /// <summary>
-        /// 初始化HP显示
+        /// 设置HP显示（新接口，GameController用）
         /// </summary>
-        /// <param name="max">最大HP值</param>
-        public void InitHP(int max)
+        public void SetHP(int current, int max)
         {
+            currentHP = current;
             maxHP = max;
-            currentHP = max;
             UpdateHPVisual();
         }
 
         /// <summary>
-        /// 更新当前HP显示
+        /// 更新当前HP
         /// </summary>
-        /// <param name="current">当前HP值</param>
         public void UpdateHP(int current)
         {
             currentHP = current;
@@ -45,22 +56,21 @@ namespace Game.UI
         }
 
         /// <summary>
-        /// 更新HP最大值（可选，用于升级等场景）
+        /// 更新最大HP
         /// </summary>
-        /// <param name="newMax">新的最大HP值</param>
-        public void UpdateMaxHP(int newMax)
+        public void UpdateMaxHP(int max)
         {
-            maxHP = newMax;
+            maxHP = max;
             UpdateHPVisual();
         }
 
         /// <summary>
-        /// 获取当前显示的HP值
+        /// 获取当前HP
         /// </summary>
         public int GetCurrentHP() => currentHP;
 
         /// <summary>
-        /// 获取当前最大HP值
+        /// 获取最大HP
         /// </summary>
         public int GetMaxHP() => maxHP;
 
@@ -69,18 +79,8 @@ namespace Game.UI
         #region Point接口
 
         /// <summary>
-        /// 初始化分数显示
+        /// 设置Point（新接口）
         /// </summary>
-        public void InitPoint()
-        {
-            currentPoint = 0;
-            UpdatePointVisual();
-        }
-
-        /// <summary>
-        /// 设置当前分数
-        /// </summary>
-        /// <param name="point">分数值</param>
         public void SetPoint(int point)
         {
             currentPoint = point;
@@ -88,9 +88,8 @@ namespace Game.UI
         }
 
         /// <summary>
-        /// 增加分数
+        /// 增加/减少Point
         /// </summary>
-        /// <param name="amount">增加量</param>
         public void AddPoint(int amount)
         {
             currentPoint += amount;
@@ -98,19 +97,33 @@ namespace Game.UI
         }
 
         /// <summary>
-        /// 获取当前分数
+        /// 获取当前Point
         /// </summary>
         public int GetCurrentPoint() => currentPoint;
 
         #endregion
 
-        #region 私有方法（视觉更新）
+        #region 护盾接口（新增，GameController用）
+
+        /// <summary>
+        /// 设置护盾显示
+        /// </summary>
+        public void SetShield(int current, int max)
+        {
+            // 用PointText显示护盾值
+            if (pointText != null)
+                pointText.text = $"{current}/{max}";
+        }
+
+        #endregion
+
+        #region 私有方法
 
         private void UpdateHPVisual()
         {
             if (hpFillImage != null)
                 hpFillImage.fillAmount = maxHP > 0 ? (float)currentHP / maxHP : 0;
-
+            
             if (hpText != null)
                 hpText.text = $"{currentHP}/{maxHP}";
         }
