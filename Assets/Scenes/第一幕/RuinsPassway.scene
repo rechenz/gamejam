@@ -296,7 +296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetScene: fileroom
-  spawnPosition: {x: -9.48, y: -2}
+  spawnPosition: {x: -4, y: -2}
   colliderOffset: {x: 0, y: 0}
   colliderSize: {x: 0.8, y: 1.8}
   triggerTag: Player

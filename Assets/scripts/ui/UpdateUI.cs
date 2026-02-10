@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Game.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UpdateUI : MonoBehaviour
 {
@@ -41,7 +42,7 @@ public class UpdateUI : MonoBehaviour
 
     public void ifDeath()
     {
-
+        SceneManager.LoadScene("DeathScene");
     }
 
     public void PointDecrease()
