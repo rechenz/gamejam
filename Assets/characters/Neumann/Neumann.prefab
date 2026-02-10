@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2455161201668137041}
   - component: {fileID: 1309346947138452095}
   - component: {fileID: 5057166574519502856}
+  - component: {fileID: 670012203601701457}
   m_Layer: 0
   m_HasEditorInfo: 1
   m_Name: Neumann
@@ -107,6 +108,36 @@ MonoBehaviour:
   xspeed: 3.3
   yspeed: 3.3
   isspace: 0
+  HollyScene:
+  - 001
+  - 002
+  - 003
+  - 004
+  - 005
+  - 007
+  - 008
+  - 009
+  - 010
+  - 011
+  - 012
+  - 013
+  - 014
+  - 015
+  - 016
+  - 017
+  - 018
+  - 019
+  - 020
+  - 021
+  - 022
+  - 023
+  - 024
+  - 025
+  - 026
+  - 027
+  - 028
+  - 029
+  - 030
 --- !u!70 &2455161201668137041
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -194,3 +225,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &670012203601701457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8685189631484040382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d5b1cc1cdfd9ea448ea3584fc49f06c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInpointView: 0
+  pointViewList1: []
+  pointVeiwActive1: []
+  pointViewList2: []
+  pointVeiwActive2: []

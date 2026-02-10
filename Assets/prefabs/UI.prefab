@@ -151,7 +151,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   costTime: 15
-  isInpointView: 0
+  Sc: {fileID: 0}
+  MaxPoint: 10
+  MaxHP: 3
 --- !u!114 &-4310747508904762784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,9 +166,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4c96670f2fafef458a28d763d41a2f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpFillImage: {fileID: 0}
-  hpText: {fileID: 0}
-  pointText: {fileID: 0}
+  hpFillImage: {fileID: 477818581299024490}
+  hpText: {fileID: 8291299362699026018}
+  pointText: {fileID: 1899504608007804139}
 --- !u!1 &1460673007533958833
 GameObject:
   m_ObjectHideFlags: 0

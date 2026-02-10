@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class charactermove : MonoBehaviour
@@ -9,11 +10,19 @@ public class charactermove : MonoBehaviour
     public bool isspace = false;
     Animator animator;
     Transform Tr;
+    public List<string> HollyScene = new List<string>();
+    string currentSceneName;
     // Start is called before the first frame update
     void Start()
     {
         Tr = GetComponent<Transform>();
         animator = GetComponent<Animator>();
+        currentSceneName = SceneManager.GetActiveScene().name;
+        if (HollyScene.Contains(currentSceneName))
+        {
+            isspace = true;
+            animator.SetBool("isInSpace", true);
+        }
     }
 
     void moveleft()
