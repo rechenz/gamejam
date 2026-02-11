@@ -41,7 +41,7 @@ public class DoorTeleporter : MonoBehaviour
 
     [Header("调试")]
     [Tooltip("显示调试信息")]
-    public bool showDebug = true;
+    public bool showDebug = false;
 
     [Tooltip("传送门颜色")]
     public Color gizmoColor = new Color(0.2f, 0.8f, 1f, 0.5f);

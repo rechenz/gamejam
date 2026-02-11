@@ -26,6 +26,102 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/\u7B2C\u4E00\u5E55/fileroom.scene"
     guid: 5981f012a5a76b144b67534a014d7119
+  - enabled: 1
+    path: Assets/Scenes/001/001.scene
+    guid: f660c0831b9853740aba24ac497e0925
+  - enabled: 1
+    path: Assets/Scenes/002/002.scene
+    guid: 98be2ca7898582e4090a339b8fdde78d
+  - enabled: 1
+    path: Assets/Scenes/003/003.scene
+    guid: f031f5b860c39304dae73a1dd97ff63b
+  - enabled: 1
+    path: Assets/Scenes/004/004.scene
+    guid: 87d2f858aac0ec84c852b3e7e31c8738
+  - enabled: 1
+    path: Assets/Scenes/005/005.scene
+    guid: d040787eaa97b404c8c33cb71be15e39
+  - enabled: 1
+    path: "Assets/Scenes/006\uFF08\u5B9E\u9A8C\u8231\uFF09/006.scene"
+    guid: 23eaa81b19b27f948b2c0b307536ae7e
+  - enabled: 1
+    path: Assets/Scenes/007/007.scene
+    guid: 6ffa3f27a37e7824f907e394d1f49f09
+  - enabled: 1
+    path: Assets/Scenes/008/008.scene
+    guid: e1b48e766eaa6fb4dae48c2d21e6b9b7
+  - enabled: 1
+    path: Assets/Scenes/009/009.scene
+    guid: 97fb7e822f550e3489f11cebde517139
+  - enabled: 1
+    path: Assets/Scenes/010/010.scene
+    guid: 859fd98a08d9e2640af6105e31fb6853
+  - enabled: 1
+    path: Assets/Scenes/011/011.scene
+    guid: d8f4c0aeba4f5cb4db232846ebb2a6ee
+  - enabled: 1
+    path: Assets/Scenes/012/012.scene
+    guid: 22546612e3b3858438483ee51acef838
+  - enabled: 1
+    path: Assets/Scenes/013/013.scene
+    guid: 479aec1b0cda3594c939ec1eec84bcd9
+  - enabled: 1
+    path: Assets/Scenes/014/014.scene
+    guid: 8726374b2b435fd4486c1e5541061975
+  - enabled: 1
+    path: Assets/Scenes/015/015.scene
+    guid: 560f8bc5498d36f4aa4376c3e225b076
+  - enabled: 1
+    path: Assets/Scenes/016/016.scene
+    guid: 18a9af3757e27694db35eff4f1ead414
+  - enabled: 1
+    path: Assets/Scenes/017/017.scene
+    guid: fca85bd216ece3e4cab8df89a53ae4d9
+  - enabled: 1
+    path: Assets/Scenes/018/018.scene
+    guid: 03db5c001a958734583f9b72b39a3aea
+  - enabled: 1
+    path: Assets/Scenes/019/019.scene
+    guid: 032f87b686384a844a29f0e85e46fa50
+  - enabled: 1
+    path: Assets/Scenes/020/020.scene
+    guid: bd6d8e119b174c448b8ee77dc2548b2d
+  - enabled: 1
+    path: Assets/Scenes/021/021.scene
+    guid: 62906484c98d8264bbffdb25fd60eb30
+  - enabled: 1
+    path: Assets/Scenes/022/022.scene
+    guid: ecaa69f2c88f59749b515a2c47dd8661
+  - enabled: 1
+    path: Assets/Scenes/023/023.scene
+    guid: dd80209a05f4ca740933e489f7f71d49
+  - enabled: 1
+    path: Assets/Scenes/024/024.scene
+    guid: 29ced1e084e684d4198648c0076dd977
+  - enabled: 1
+    path: Assets/Scenes/025/025.scene
+    guid: a4f9e096c7d04ef499dbb3535fe04b1e
+  - enabled: 1
+    path: Assets/Scenes/026/026.scene
+    guid: 4698edc34cf832041be06d8f8a86ddbe
+  - enabled: 1
+    path: Assets/Scenes/027/027.scene
+    guid: 89e62bc6f0386964fbe1da20fc6352b5
+  - enabled: 1
+    path: Assets/Scenes/028/028.scene
+    guid: 9e43ef45725346e42bbfa44f388fb896
+  - enabled: 1
+    path: Assets/Scenes/029/029.scene
+    guid: 0e59951af5f6db3488f3e15ee2747edf
+  - enabled: 1
+    path: Assets/Scenes/030/030.scene
+    guid: 01d2f8d67df36a74eb940720d97a03dd
+  - enabled: 1
+    path: "Assets/Scenes/031\uFF08\u4E2D\u63A7\u5BA4\u5927\u95E8\uFF09/031.scene"
+    guid: 028625a858ef7b8408f4465664bd8926
+  - enabled: 1
+    path: "Assets/Scenes/032\uFF08\u4E2D\u63A7\u5BA4\u5185\u90E8\uFF09/032.scene"
+    guid: e9ee95b3f15f36f4fac25e0395f53e39
   m_BuildProfiles: []
   m_configObjects: {}
   m_SlimFeaturesWeixinMiniGame:

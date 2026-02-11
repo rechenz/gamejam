@@ -152,7 +152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   costTime: 15
   Sc: {fileID: 0}
-  MaxPoint: 10
+  MaxPoint: 5
   MaxHP: 3
 --- !u!114 &-4310747508904762784
 MonoBehaviour:

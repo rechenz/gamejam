@@ -240,5 +240,7 @@ MonoBehaviour:
   isInpointView: 0
   pointViewList1: []
   pointVeiwActive1: []
+  pointVeiwAct1: []
   pointViewList2: []
   pointVeiwActive2: []
+  pointVeiwAct2: []
