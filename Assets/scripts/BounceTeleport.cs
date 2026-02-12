@@ -316,13 +316,21 @@ public class BounceTeleport : MonoBehaviour
 
         try
         {
-            SceneManager.LoadScene(targetScene);
+            StartCoroutine(DelayedSceneLoad());
+
         }
         catch (System.Exception e)
         {
             Debug.LogError($"{gameObject.name}: 加载场景失败 - {e.Message}", this);
             isTeleporting = false;
         }
+    }
+    IEnumerator DelayedSceneLoad()
+    {
+        // 等待一帧，确保重生位置已经保存
+        yield return null;
+
+        SceneManager.LoadScene(targetScene);
     }
 
     // 静态方法：在其他场景中获取重生位置

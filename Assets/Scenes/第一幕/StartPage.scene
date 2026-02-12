@@ -470,7 +470,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 915998043}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36fc25ce9883da64a9b8bf7bf31674c1, type: 3}
   m_Name: 
@@ -809,11 +809,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1910260947}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6045a5e0173fe714497ebdc36a86e83b, type: 3}
+  m_Script: {fileID: 11500000, guid: ac3ab0289e25eba4f8a83a2cb4849fa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueID: Dialogue007
+  DialogueID: Dialogue008
   dialogueSprites: {fileID: 1910260952}
+  doorTeleport: {fileID: 915998047}
 --- !u!1001 &2054788939
 PrefabInstance:
   m_ObjectHideFlags: 0

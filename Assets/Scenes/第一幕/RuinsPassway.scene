@@ -307,7 +307,7 @@ MonoBehaviour:
   teleportDelay: 0
   playSound: 1
   teleportSound: {fileID: 0}
-  showDebug: 1
+  showDebug: 0
   gizmoColor: {r: 0.2, g: 0.8, b: 1, a: 0.5}
   isInRange: 0
   player: {fileID: 0}
