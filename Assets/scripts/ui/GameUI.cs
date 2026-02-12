@@ -122,10 +122,10 @@ namespace Game.UI
         private void UpdateHPVisual()
         {
             if (hpFillImage != null)
-                hpFillImage.fillAmount = maxHP > 0 ? (float)currentHP / maxHP : 0;
-            
+                hpFillImage.fillAmount = (float)currentHP / maxHP;
+    
             if (hpText != null)
-                hpText.text = $"{currentHP}/{maxHP}";
+                hpText.text = currentHP.ToString();  // 只显示100，不是100/100
         }
 
         private void UpdatePointVisual()
