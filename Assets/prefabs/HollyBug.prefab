@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2854368322630254509}
   - component: {fileID: 7307846583702818850}
+  - component: {fileID: 5343041141974927628}
   m_Layer: 0
   m_HasEditorInfo: 1
   m_Name: Check
@@ -79,6 +80,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 13.261304, y: 11.409806}
   m_EdgeRadius: 0
+--- !u!114 &5343041141974927628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3620574169980027600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f01111b76997c594393783f3fc97c5d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HollyID: 
+  isInRange: 0
 --- !u!1 &5459624135005488706
 GameObject:
   m_ObjectHideFlags: 0

@@ -825,6 +825,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -1981181925
       objectReference: {fileID: 0}
+    - target: {fileID: 5343041141974927628, guid: 48f490571368a824a91ef55d5bc9695e, type: 3}
+      propertyPath: HollyID
+      value: 006
+      objectReference: {fileID: 0}
     - target: {fileID: 5459624135005488706, guid: 48f490571368a824a91ef55d5bc9695e, type: 3}
       propertyPath: m_Name
       value: HollyBug

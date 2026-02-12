@@ -622,8 +622,59 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2152461650385246376, guid: cff84cd7dac7b764e9b181ed0db7b8a2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1400656936}
+    - targetCorrespondingSourceObject: {fileID: 2152461650385246376, guid: cff84cd7dac7b764e9b181ed0db7b8a2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1400656937}
   m_SourcePrefab: {fileID: 100100000, guid: cff84cd7dac7b764e9b181ed0db7b8a2, type: 3}
+--- !u!1 &1400656934 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2152461650385246376, guid: cff84cd7dac7b764e9b181ed0db7b8a2, type: 3}
+  m_PrefabInstance: {fileID: 1400656933}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1400656935 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7518202049924509993, guid: cff84cd7dac7b764e9b181ed0db7b8a2, type: 3}
+  m_PrefabInstance: {fileID: 1400656933}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400656934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4da508deee93f40b6c1a15f38295ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1400656936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400656934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59663415db7556458dc78f2f5e78f97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueID: Dialogue010
+  dialogueSprites: {fileID: 1400656935}
+--- !u!114 &1400656937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400656934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2f70e1bb53edc240ae01d1854a83b03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueID: Dialogue014
+  dialogueSprites: {fileID: 1400656935}
+  Bug: {fileID: 2112581208}
 --- !u!1001 &1451285489
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -966,6 +1017,11 @@ PrefabInstance:
 --- !u!212 &2112581207 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 1446140068526195396, guid: 48f490571368a824a91ef55d5bc9695e, type: 3}
+  m_PrefabInstance: {fileID: 2112581206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2112581208 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5459624135005488706, guid: 48f490571368a824a91ef55d5bc9695e, type: 3}
   m_PrefabInstance: {fileID: 2112581206}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6158092751582754505
