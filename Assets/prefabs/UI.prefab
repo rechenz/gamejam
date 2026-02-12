@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 542185162391335336}
   - component: {fileID: 4067294102429035665}
   - component: {fileID: 8842498914292235494}
-  - component: {fileID: 1017812668963273740}
   - component: {fileID: 8549111957131010873}
   - component: {fileID: -3051171740833816627}
   - component: {fileID: 5844908334533554625}
@@ -19,7 +18,7 @@ GameObject:
   m_Layer: 5
   m_HasEditorInfo: 1
   m_Name: UI
-  m_TagString: Untagged
+  m_TagString: UI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91,23 +90,6 @@ MonoBehaviour:
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
   m_PresetInfoIsWorld: 0
---- !u!114 &1017812668963273740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 562158328181084850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!114 &8549111957131010873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,7 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 944b8686d0d22124ea891ecf616bfe3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maincamera: {fileID: 0}
+  maincamera: {fileID: 6367415959361047689, guid: 7f83fc42869183a4991257c71726862a, type: 3}
 --- !u!114 &5844908334533554625
 MonoBehaviour:
   m_ObjectHideFlags: 0

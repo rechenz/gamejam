@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:yousandi.cn,2023:
+--- !u!1 &2152461650385246376
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 7
+  m_Component:
+  - component: {fileID: 7023780753864746566}
+  - component: {fileID: 7518202049924509993}
+  m_Layer: 0
+  m_HasEditorInfo: 1
+  m_Name: UseDialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7023780753864746566
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2152461650385246376}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7518202049924509993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2152461650385246376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4da508deee93f40b6c1a15f38295ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NeumannAmazed: {fileID: 21300000, guid: d98f7b83a096a744c9f7da1fc02512c4, type: 3}
+  NeumannNormal: {fileID: 21300000, guid: 7e6372a1bf01ec344a1d33b6cbea0824, type: 3}
+  NeumannHelpless: {fileID: 21300000, guid: 131d0f0f656154e4498c8a44cc181a88, type: 3}
+  NeumannPuzzled: {fileID: 21300000, guid: b3eb8ea068d792445bcaa197a6de540f, type: 3}
+  NeumannSmile: {fileID: 21300000, guid: 916fb739d3da2ea40979f62d9ebd7ee6, type: 3}
+  NeumannWounded: {fileID: 21300000, guid: c45e90967560ff94698ed5b8b9fce018, type: 3}
+  DamselNormal: {fileID: 21300000, guid: d511093804aaf33498165446abab2e04, type: 3}
+  DamselSilent: {fileID: 21300000, guid: 56c89f6f5a7104d4394e1b71c8a8a147, type: 3}
+  DamselSmile: {fileID: 21300000, guid: edccfc23b7982ea4da0c7c0182df3bcb, type: 3}
+  ProtecterNormal: {fileID: 21300000, guid: c5abb57231d4b17489479d5ed2e22dab, type: 3}
+  ProtecterSmile: {fileID: 21300000, guid: cfb60beff82a5e94bbd878f221d6ac80, type: 3}
+  ProtecterAngry: {fileID: 21300000, guid: 7d5ad064fc63afe4594fdf52f02f224a, type: 3}
+  ProtecterHappy: {fileID: 21300000, guid: 9783f143b1b71a149b3af78a75ae3bc6, type: 3}
