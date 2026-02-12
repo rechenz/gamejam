@@ -15,6 +15,7 @@ public class SimpleLockedDoor : MonoBehaviour
     private SpriteRenderer Background2Sprite;
 
     public string LockDoorID = "LockDoor_001";
+    public Behaviour dialogue9;
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
@@ -55,12 +56,13 @@ public class SimpleLockedDoor : MonoBehaviour
     void Unlock()
     {
         doorTeleporter.enabled = true;
-        this.enabled = false;
         Background1Sprite.enabled = false;
         Background2Sprite.enabled = true;
         Destroy(currentLockInstance);
         currentLockInstance = null;
         SimpleStateManager.Instance.SaveBool(LockDoorID, "isOpen", true);
+        dialogue9.enabled = true;
+        this.enabled = false;
     }
 
     void Start()

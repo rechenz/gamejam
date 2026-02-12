@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -165,6 +165,7 @@ GameObject:
   - component: {fileID: 3552745016417195176}
   - component: {fileID: 5578421169505091900}
   - component: {fileID: 3406409111234360166}
+  - component: {fileID: -7596792711177249153}
   m_Layer: 5
   m_HasEditorInfo: 1
   m_Name: Dialogue
@@ -204,7 +205,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 6367415959361047689, guid: 7f83fc42869183a4991257c71726862a, type: 3}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
   m_ReceivesEvents: 1
@@ -270,6 +271,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maincamera: {fileID: 0}
+--- !u!114 &-7596792711177249153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474046873499078011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a69f2ba9bb9539f419ec09d19624375b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 6518858725441908725}
+  nameText: {fileID: 715167548969372672}
+  dialogueText: {fileID: 9029431016161120400}
+  continueIcon: {fileID: 5945342708895547336}
+  characterLeft: {fileID: 3708065344288175199}
+  characterCenter: {fileID: 7416875319334195694}
+  characterRight: {fileID: 6215235099741968889}
+  textSpeed: 0.05
+  maxVisibleLines: 3
+  maxCharsPerLine: 40
 --- !u!1 &1285732702062891150
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,7 +488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -493,6 +516,7 @@ GameObject:
   - component: {fileID: 7602607301301045282}
   - component: {fileID: 1966162804925083724}
   - component: {fileID: 25401039228018733}
+  - component: {fileID: 5900994134852215105}
   m_Layer: 5
   m_HasEditorInfo: 1
   m_Name: CharacterPanel
@@ -561,6 +585,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!225 &5900994134852215105
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016099764265661446}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &4412510930238793052
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,6 +880,7 @@ GameObject:
   - component: {fileID: 8706973888802325963}
   - component: {fileID: 2999699739446252995}
   - component: {fileID: 5302079949481313595}
+  - component: {fileID: 7731635432800699168}
   m_Layer: 5
   m_HasEditorInfo: 1
   m_Name: DialoguePanel
@@ -912,6 +949,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!225 &7731635432800699168
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6518858725441908725}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &8509003891211286136
 GameObject:
   m_ObjectHideFlags: 0

@@ -54,9 +54,9 @@ TagManager:
   - name: preScene
     uniqueID: 545804577
     locked: 0
-  - name: UI
-    uniqueID: 3343632859
-    locked: 0
   - name: Dialogue
     uniqueID: 2500464725
+    locked: 0
+  - name: UI
+    uniqueID: 3343632859
     locked: 0

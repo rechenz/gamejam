@@ -87,8 +87,8 @@ public class DialogueManager : MonoBehaviour
         {
             dialogueQueue.Enqueue(line);
         }
-
         dialoguePanel.SetActive(true);
+        dialoguePanel.GetComponent<CanvasGroup>().blocksRaycasts = true;
         continueIcon.SetActive(false);
 
         ShowNextDialogue();
@@ -311,10 +311,16 @@ public class DialogueManager : MonoBehaviour
 
     private void SetupCharacter(DialogueLine line)
     {
+        if (line.characterSprite == null || line.characterPosition == CharacterPosition.None)
+        {
+            HideAllCharacters();
+            return;
+        }
+
         // 重置所有立绘透明度
-        characterLeft.color = new Color(1, 1, 1, 0.3f);
-        characterCenter.color = new Color(1, 1, 1, 0.3f);
-        characterRight.color = new Color(1, 1, 1, 0.3f);
+        characterLeft.color = new Color(1, 1, 1, 0f);
+        characterCenter.color = new Color(1, 1, 1, 0f);
+        characterRight.color = new Color(1, 1, 1, 0f);
 
         // 设置当前立绘
         if (line.characterSprite != null && line.characterPosition != CharacterPosition.None)
@@ -339,6 +345,8 @@ public class DialogueManager : MonoBehaviour
                 targetImage.sprite = line.characterSprite;
                 targetImage.color = new Color(1, 1, 1, 1);
 
+                // targetImage.preserveAspect = true;
+                targetImage.SetNativeSize();
                 // 根据表情调整（可以扩展）
                 ApplyExpression(targetImage, line.expression);
             }
@@ -376,11 +384,11 @@ public class DialogueManager : MonoBehaviour
         System.Collections.Generic.Dictionary<string, UnityEngine.Color> nameColors =
             new System.Collections.Generic.Dictionary<string, UnityEngine.Color>()
         {
-            { "主角", UnityEngine.Color.cyan },
+            { "Neumann", UnityEngine.Color.cyan },
             { "玩家", UnityEngine.Color.cyan },
             { "英雄", UnityEngine.Color.cyan },
-            { "NPC", UnityEngine.Color.yellow },
-            { "村民", UnityEngine.Color.green },
+            { "Damsel", UnityEngine.Color.blue },
+            { "宇宙维护员", UnityEngine.Color.green },
             { "敌人", UnityEngine.Color.red },
             { "国王", UnityEngine.Color.magenta },
             { "系统", UnityEngine.Color.gray },
@@ -414,6 +422,8 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
+        if (dialoguePanel != null)
+            dialoguePanel.GetComponent<CanvasGroup>().blocksRaycasts = false;
         dialoguePanel.SetActive(false);
         HideAllCharacters();
         dialogueQueue.Clear();

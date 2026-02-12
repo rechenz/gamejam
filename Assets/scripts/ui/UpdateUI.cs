@@ -8,7 +8,7 @@ public class UpdateUI : MonoBehaviour
 {
     public float costTime = 15f; // 15s
     public pointView Sc;
-    public int MaxPoint = 10;
+    public int MaxPoint = 5;
     public int MaxHP = 3;
     private GameUI ui;
     private float lastTime = 0f;
@@ -17,7 +17,7 @@ public class UpdateUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Sc = GameObject.FindWithTag("player").GetComponent<pointView>();
+        Sc = GameObject.FindWithTag("Player").GetComponent<pointView>();
         ui = GameObject.FindWithTag("UI").GetComponent<GameUI>();
         int Point = SimpleStateManager.Instance.LoadInt("UI", "point", -1);
         int HP = SimpleStateManager.Instance.LoadInt("UI", "hp", -1);
@@ -67,6 +67,7 @@ public class UpdateUI : MonoBehaviour
     void Update()
     {
         isInpointView = Sc.isInpointView;
+        if (!isInpointView) return;
         if (isInpointView && !LastCondition)
         {
             PointDecrease();

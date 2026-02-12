@@ -9,6 +9,9 @@ public class BoxLock : MonoBehaviour
     public bool isInRange;
     private bool inLock = false;
     private GameObject currentLockInstance;
+    public GameObject Damsel;
+
+    public Dialogue5 dialogue;
 
     public string LockBoxID = "LockBox001";
 
@@ -35,6 +38,8 @@ public class BoxLock : MonoBehaviour
         SimpleStateManager.Instance.SaveBool(LockBoxID, "PasswordLock", true);
         Destroy(currentLockInstance);
         this.enabled = false;
+        if (!SimpleStateManager.Instance.LoadBool("Dialogue005", "isRead", false)) dialogue.StartDialogue();
+        Damsel.SetActive(true);
     }
 
     public void useLock()
