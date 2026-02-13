@@ -62,6 +62,7 @@
 ### 第五章节：结局
 
 根据玩家之前的 choices，进入不同的结局路线：
+
 - **重启线**：将宇宙重启，一切归零重来
 - **延续线（普通）**：与Damsel继续旅行，寻找其他幸存者
 - **延续线（新生）**：Damsel获得实体，两人在花园重逢
@@ -70,7 +71,7 @@
 
 ### 资源系统
 
-- **Point值**：用于解谜和维持点阵化状态，初始4点，完成解谜或转换场景后恢复
+- **Point值**：用于解谜和维持点阵化状态，初始15点
 - **HP值**：生命值，初始3点，触碰漏洞或长时间维持点阵化会消耗
 
 ### 交互系统
@@ -131,11 +132,11 @@
 
 本项目为 GameJam 2026 项目，由团队 **（什么叫队里除了温柔学姐就是白毛红瞳小萝莉）** 完成：
 
- - **热尘**：程序、项目负责人、游戏测试
- - **缈**：游戏策划、剧情设计、文案
- - **一颗芽菜**：美术设计、场景、人物
- - **绿豆冰**：美术设计、场景、人物、音乐
- - **GEORGEWU**：程序、UI/UX设计、游戏测试
+- **热尘**：程序、项目负责人、游戏测试
+- **缈**：游戏策划、剧情设计、文案
+- **一颗芽菜**：美术设计、场景、人物
+- **绿豆冰**：美术设计、场景、人物、音乐
+- **GEORGEWU**：程序、UI/UX设计、游戏测试
 
 ## 版权说明
 
@@ -151,9 +152,9 @@
 
 如有问题或建议，请通过以下方式联系：
 
- - 游戏官网：[https://georgewwwu.github.io/dotexplore/](https://georgewwwu.github.io/dotexplore/)
- - 项目仓库：[https://github.com/GEORGEWWWU/dotexplore](https://github.com/GEORGEWWWU/dotexplore)
- - 开发者邮箱：[dormcraft@outlook.com](mailto:dormcraft@outlook.com)
+- 游戏官网：[https://georgewwwu.github.io/dotexplore/](https://georgewwwu.github.io/dotexplore/)
+- 项目仓库：[https://github.com/GEORGEWWWU/dotexplore](https://github.com/GEORGEWWWU/dotexplore)
+- 开发者邮箱：[dormcraft@outlook.com](mailto:dormcraft@outlook.com)
 
 GameJam 2026 官网：[https://gmhub.com/jams/ugoa2026](https://gmhub.com/jams/ugoa2026)
 
