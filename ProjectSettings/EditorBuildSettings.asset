@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Home.scene
     guid: 4256599187259994399683388d69d0ec
   - enabled: 1
+    path: Assets/Scenes/AboutUs.scene
+    guid: 28ebb4022aeb5ce4e95df9fcb8725360
+  - enabled: 1
     path: "Assets/Scenes/\u7B2C\u4E00\u5E55/StartPage.scene"
     guid: b6a38006246e5f04eba31a1c1d0b6024
   - enabled: 1
