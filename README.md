@@ -1,5 +1,7 @@
 # DOT 宇宙探索 | 宇宙是一场生命游戏
 
+![游戏封面](Assets/source/Home/游戏封面.png)
+
 ## 游戏简介
 
 《DOT 宇宙探索》是一款2D叙事解谜冒险游戏，讲述在一个由康威生命游戏模型模拟的宇宙中，失忆的主角 `Neumann` 与只存在于点阵世界的少女 `Damsel` 一同探索古文明遗迹，寻找宇宙真相和自身记忆的故事。
@@ -150,7 +152,7 @@
 如有问题或建议，请通过以下方式联系：
 
  - 游戏官网：[https://georgewwwu.github.io/dotexplore/](https://georgewwwu.github.io/dotexplore/)
- - 项目仓库：[[https://github.com/GEORGEWWWU/dotexplore](https://github.com/GEORGEWWWU/dotexplore)]
+ - 项目仓库：[https://github.com/GEORGEWWWU/dotexplore](https://github.com/GEORGEWWWU/dotexplore)
  - 开发者邮箱：[dormcraft@outlook.com](mailto:dormcraft@outlook.com)
 
 GameJam 2026 官网：[https://gmhub.com/jams/ugoa2026](https://gmhub.com/jams/ugoa2026)
