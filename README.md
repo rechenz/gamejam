@@ -152,7 +152,7 @@
 如有问题或建议，请通过以下方式联系：
 
  - 游戏官网：[https://georgewwwu.github.io/dotexplore/](https://georgewwwu.github.io/dotexplore/)
- - 项目仓库：[[https://github.com/GEORGEWWWU/dotexplore](https://github.com/GEORGEWWWU/dotexplore)]
+ - 项目仓库：[https://github.com/GEORGEWWWU/dotexplore](https://github.com/GEORGEWWWU/dotexplore)
  - 开发者邮箱：[dormcraft@outlook.com](mailto:dormcraft@outlook.com)
 
 GameJam 2026 官网：[https://gmhub.com/jams/ugoa2026](https://gmhub.com/jams/ugoa2026)
