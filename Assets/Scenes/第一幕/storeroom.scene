@@ -132,6 +132,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1280724724468108057, guid: 663d102a5ea662c4d95f037a77bc987b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 321.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280724724468108057, guid: 663d102a5ea662c4d95f037a77bc987b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 483.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280724724468108057, guid: 663d102a5ea662c4d95f037a77bc987b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280724724468108057, guid: 663d102a5ea662c4d95f037a77bc987b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 2231320381364531467, guid: 663d102a5ea662c4d95f037a77bc987b, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -187,6 +203,22 @@ PrefabInstance:
     - target: {fileID: 5683145647988245591, guid: 663d102a5ea662c4d95f037a77bc987b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956396755587953126, guid: 663d102a5ea662c4d95f037a77bc987b, type: 3}
+      propertyPath: m_text
+      value: "\u82B1\u56ED\u4E0D\u77E5\u9053\u4E3A\u4EC0\u4E48\u4ECE\u5185\u90E8\u5173\u95ED\u4E86\uFF0C\u6211\u4EEC\u7684\u4E00\u4E9B\u751F\u7269\u5B9E\u9A8C\u53EA\u80FD\u88AB\u8FEB\u7EC8\u6B62\u3002\u4F46\u6839\u636E\u5DF2\u6709\u7684\u7406\u8BBA\uFF0C\u5B83\u7684\u81EA\u6211\u5173\u95ED\u6216\u8BB8\u5728\u8868\u660E\u5B83\u6B63\u5728\u5B55\u80B2\u65B0\u7684\u751F\u547D\uFF1F\u6216\u8BB8\u5F88\u5FEB\u6211\u4EEC\u5C31\u80FD\u5F97\u5230\u7B54\u6848\u3002\n\u82B1\u56ED\u6D88\u5931\u4E86\u3002\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956396755587953126, guid: 663d102a5ea662c4d95f037a77bc987b, type: 3}
+      propertyPath: m_fontSize
+      value: 35.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956396755587953126, guid: 663d102a5ea662c4d95f037a77bc987b, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956396755587953126, guid: 663d102a5ea662c4d95f037a77bc987b, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -723,7 +755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetScene: fileroom
-  spawnPosition: {x: -17.35, y: -2}
+  spawnPosition: {x: -14.4, y: -2}
   colliderOffset: {x: 0, y: 0}
   colliderSize: {x: 1.94, y: 3.98}
   triggerTag: Player

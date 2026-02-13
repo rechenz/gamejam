@@ -4,8 +4,11 @@ public class SimpleStoneTablet : MonoBehaviour
 {
     public GameObject canvas;
     public KeyCode interactionKey = KeyCode.F;
-    public bool isInpointView;
     private bool playerInRange = false;
+
+    [Header("提示设置")]
+    public bool showDebugMessage = true;
+    public string interactionMessage = "按 F 查看石碑";
 
     void Start()
     {
@@ -18,7 +21,8 @@ public class SimpleStoneTablet : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange = true;
-            Debug.Log("靠近石碑，按 " + interactionKey + " 互动");
+            if (showDebugMessage)
+                Debug.Log(interactionMessage);
         }
     }
 
@@ -36,22 +40,31 @@ public class SimpleStoneTablet : MonoBehaviour
     {
         if (playerInRange && Input.GetKeyDown(interactionKey))
         {
-            if (canvas != null)
-            {
-                bool shouldActivate = !canvas.activeSelf;
-                canvas.SetActive(shouldActivate);
-
-                // 简单控制玩家
-                GameObject player = GameObject.FindGameObjectWithTag("Player");
-                if (player != null)
-                {
-                    MonoBehaviour[] scripts = player.GetComponents<MonoBehaviour>();
-                    foreach (var script in scripts)
-                    {
-                        script.enabled = !shouldActivate;
-                    }
-                }
-            }
+            ToggleCanvas();
         }
+    }
+
+    public void ToggleCanvas()
+    {
+        if (canvas != null)
+        {
+            bool shouldActivate = !canvas.activeSelf;
+            canvas.SetActive(shouldActivate);
+
+            // 可选：暂停游戏时间
+            // Time.timeScale = shouldActivate ? 0 : 1;
+        }
+    }
+
+    public void ShowCanvas()
+    {
+        if (canvas != null)
+            canvas.SetActive(true);
+    }
+
+    public void HideCanvas()
+    {
+        if (canvas != null)
+            canvas.SetActive(false);
     }
 }

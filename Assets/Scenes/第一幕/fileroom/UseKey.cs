@@ -24,7 +24,17 @@ public class UseKey : MonoBehaviour
     public void Use()
     {
         dialogue7.StartDialogue();
+        SimpleStateManager.Instance.SaveBool("PasswordBox", "isOpen", true);
         Destroy(gameObject);
+    }
+
+    void Start()
+    {
+        if (SimpleStateManager.Instance.LoadBool("PasswordBox", "isOpen", false))
+        {
+            dialogue7.Set();
+            Destroy(gameObject);
+        }
     }
 
     // Update is called once per frame

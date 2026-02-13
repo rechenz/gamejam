@@ -269,7 +269,7 @@ public class Dialogue6 : MonoBehaviour
                 characterName = "Damsel",
                 characterSprite = DamselNormal,
                 characterPosition = CharacterPosition.Right,
-                dialogue = "不过，你能从点阵的视角观察世界的话，或许你可以试试。你能让己跟这把钥匙同质化吗？如果可以的话，或许就能打开这把锁了。",
+                dialogue = "不过，你能从点阵的视角观察世界的话，或许你可以试试。你能让自己跟这把钥匙同质化吗？如果可以的话，或许就能打开这把锁了。",
             },
             new DialogueLine
             {

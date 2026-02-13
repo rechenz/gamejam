@@ -134,8 +134,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   costTime: 15
   Sc: {fileID: 0}
-  MaxPoint: 15
-  MaxHP: 3
+  MaxPoint: 30
+  MaxHP: 10
 --- !u!114 &-4310747508904762784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,7 +265,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 172.79999, y: 275.4}
+  m_AnchoredPosition: {x: 217, y: 275.4}
   m_SizeDelta: {x: 100, y: 8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6923812371863462985
@@ -554,7 +554,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 482.42, y: 275.4}
+  m_AnchoredPosition: {x: 413.4, y: 275.4}
   m_SizeDelta: {x: 101.6, y: 30.53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &296102079639680475

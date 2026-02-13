@@ -665,7 +665,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 670012203601701457, guid: 2ed8180d10df6124bbe3a71c5415d756, type: 3}
       propertyPath: pointViewList2.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 670012203601701457, guid: 2ed8180d10df6124bbe3a71c5415d756, type: 3}
       propertyPath: pointViewList1.Array.data[0]
@@ -675,6 +675,10 @@ PrefabInstance:
       propertyPath: pointViewList2.Array.data[0]
       value: 
       objectReference: {fileID: 887408616}
+    - target: {fileID: 670012203601701457, guid: 2ed8180d10df6124bbe3a71c5415d756, type: 3}
+      propertyPath: pointViewList2.Array.data[1]
+      value: 
+      objectReference: {fileID: 2112581207}
     - target: {fileID: 8081158741027871980, guid: 2ed8180d10df6124bbe3a71c5415d756, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.6675
@@ -996,6 +1000,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48f490571368a824a91ef55d5bc9695e, type: 3}
+--- !u!212 &2112581207 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1446140068526195396, guid: 48f490571368a824a91ef55d5bc9695e, type: 3}
+  m_PrefabInstance: {fileID: 2112581206}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -1527,6 +1527,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 625208134}
     - target: {fileID: 3977914978268571529, guid: 9d2986d3a495d4642955749a6fc37294, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3977914978268571529, guid: 9d2986d3a495d4642955749a6fc37294, type: 3}
       propertyPath: m_SortingLayerID
       value: -951334437
       objectReference: {fileID: 0}
@@ -1576,6 +1580,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7356284364266981579, guid: 9d2986d3a495d4642955749a6fc37294, type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356284364266981579, guid: 9d2986d3a495d4642955749a6fc37294, type: 3}
+      propertyPath: showDebugMessage
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8069333605329289167, guid: 9d2986d3a495d4642955749a6fc37294, type: 3}

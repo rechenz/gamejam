@@ -323,9 +323,9 @@ public class Dialogue16 : MonoBehaviour
                 dialogue = "回到太空实验舱，Neumann和考古学家一起离开了。"
             }
         };
+        SimpleStateManager.Instance.SaveBool(DialogueID, "isRead", true);
         DialogueManager.Instance.OnDialogueEnd += OnDialogueFinished;
         DialogueManager.Instance.StartDialogue(Dialogue);
-        SimpleStateManager.Instance.SaveBool(DialogueID, "isRead", true);
         this.enabled = false;
     }
     private void OnDialogueFinished()

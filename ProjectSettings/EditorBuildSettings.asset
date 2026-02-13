@@ -138,6 +138,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Finals/DeathScene.scene
     guid: 993fe42ecc49dfb4d957667ab0c2d6f5
   - enabled: 1
+    path: Assets/Scenes/Finals/DeathScene 1.scene
+    guid: a54adfd791bf22a498a0a971bb0ab164
+  - enabled: 1
     path: Assets/Scenes/Finals/ReStart.scene
     guid: 177ac3d64417c1541a3093a6ccc0dc31
   m_BuildProfiles: []

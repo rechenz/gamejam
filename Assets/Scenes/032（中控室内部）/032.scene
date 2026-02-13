@@ -1967,7 +1967,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b4a41481953be42b337775501ed2f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  passwordLockPrefab: {fileID: 0}
+  passwordLockPrefab: {fileID: 1374515190785040113, guid: d6ad487660b270c47b600fa3ec678fb7, type: 3}
   doorPassword: 20040101215
   isInRange: 0
   dialogue: {fileID: 2025427086}

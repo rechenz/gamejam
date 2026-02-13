@@ -243,4 +243,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfd1160cfdb07a64db779b6712a0c05f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeltaTime: 1
+  DeltaTime: 2

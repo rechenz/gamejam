@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class DialogueDeath : MonoBehaviour
+public class DialogueDeath1 : MonoBehaviour
 {
     [Header("Neumann")]
     private Sprite NeumannAmazed;
@@ -53,64 +53,79 @@ public class DialogueDeath : MonoBehaviour
         {
             new DialogueLine
             {
+                characterName = "Neumann",
+                characterSprite = null,
+                characterPosition = CharacterPosition.None,
+                dialogue = "滋——"
+            },
+            new DialogueLine
+            {
                 characterName = "Damsel",
-                characterSprite = DamselSilent,
+                characterSprite = DamselNormal,
                 characterPosition = CharacterPosition.Left,
-                dialogue = "喂，小心！别碰到漏洞。"
+                dialogue = "怎么了？"
             },
             new DialogueLine
             {
                 characterName = "Neumann",
-                characterSprite = NeumannNormal,
+                characterSprite = NeumannPuzzled,
                 characterPosition = CharacterPosition.Right,
-                dialogue = "啊，我碰到了吗？我之后会注意——"
-            },
-            new DialogueLine
-            {
-                characterName = "Neumann",
-                characterSprite = NeumannAmazed,
-                characterPosition = CharacterPosition.Right,
-                dialogue = "话才说到一半的时候，Neumann突然感受到了一股奇异的吸力。很强的吸力。"
-            },
-            new DialogueLine
-            {
-                characterName = "Neumann",
-                characterSprite = NeumannHelpless,
-                characterPosition = CharacterPosition.Right,
-                dialogue = "他想试着挣脱它，却发现那股吸力猛地一加强，瞬间让他失去了重心。"
+                dialogue = "不知道，感觉不是很妙。"
             },
             new DialogueLine
             {
                 characterName = "Damsel",
                 characterSprite = DamselSilent,
                 characterPosition = CharacterPosition.Left,
-                dialogue = "喂！"
+                dialogue = "喂！你的身体——"
             },
             new DialogueLine
             {
                 characterName = "Neumann",
-                characterSprite = NeumannHelpless,
+                characterSprite = NeumannPuzzled,
                 characterPosition = CharacterPosition.Right,
-                dialogue = "Neumann没有来得及回应Damsel，因为他的身体已经被宇宙漏洞卷走。"
+                dialogue = "怎么了？"
+            },
+            new DialogueLine
+            {
+                characterName = "Damsel",
+                characterSprite = DamselSilent,
+                characterPosition = CharacterPosition.Left,
+                dialogue = "你的点阵正在破碎——"
             },
             new DialogueLine
             {
                 characterName = "Neumann",
-                characterSprite = NeumannWounded,
-                characterPosition = CharacterPosition.Right,
-                dialogue = "在他的背后是比虚空还更虚无的东西。Neumann感受到自己的存在正在迅速湮灭，但他唯一能做的，只剩下最后一次把手伸向宇宙漏洞的另一端——"
+                characterSprite = null,
+                characterPosition = CharacterPosition.None,
+                dialogue = "声音骤然变得模糊不清。"
             },
             new DialogueLine
             {
                 characterName = "Neumann",
-                characterSprite = NeumannWounded,
-                characterPosition = CharacterPosition.Right,
-                dialogue = "已经再也回不去的现实世界的，Damsel的方向了。"
+                characterSprite = null,
+                characterPosition = CharacterPosition.None,
+                dialogue = "Neumann像是脑后挨了一记重锤一般，眼前猛地黑了一下，然后视野迅速地变成了全白。"
+            },
+            new DialogueLine
+            {
+                characterName = "Neumann",
+                characterSprite = null,
+                characterPosition = CharacterPosition.None,
+                dialogue = "在意识和视野一样什么都不剩下之前，Neumann低下头，看向自己的手，却只看见了一团正在迅速解构的、变得混乱无序的点。"
+            },
+            new DialogueLine
+            {
+                characterName = "Neumann",
+                characterSprite = null,
+                characterPosition = CharacterPosition.None,
+                dialogue = "再往后他就什么也不知道了。因为能够支撑他思考的器官已经再也不能以器官的形式存在。很快，Neumann的存在会变成宇宙中的一团无人在意的原子，一点一点地逸散进整个宇宙当中。"
             }
         };
         DialogueManager.Instance.StartDialogue(Dialogue);
         DialogueManager.Instance.OnDialogueEnd += OnDialogueFinished;
     }
+
 
 
 

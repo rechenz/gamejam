@@ -40,8 +40,8 @@ public class Dialogue8 : MonoBehaviour
         }
         else
         {
-            StartDialogue();
             SetBegin();
+            StartDialogue();
         }
     }
 

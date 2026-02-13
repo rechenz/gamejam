@@ -29,6 +29,8 @@ public class TextPiece : MonoBehaviour
             SpriteWithShadow.enabled = false;
             Sprite.enabled = true;
             isInrange = false;
+            Text.enabled = false;
+            isLooking = false;
         }
     }
     // Start is called before the first frame update

@@ -116,6 +116,13 @@ public class Dialogue1 : MonoBehaviour
                 characterSprite = null,
                 characterPosition = CharacterPosition.None,
                 dialogue = "——宇宙是一场游戏，一场生命的游戏。"
+            },
+            new DialogueLine
+            {
+                characterName = "提示",
+                characterSprite = null,
+                characterPosition = CharacterPosition.None,
+                dialogue = "按F键交互"
             }
         };
         DialogueManager.Instance.StartDialogue(Dialogue);

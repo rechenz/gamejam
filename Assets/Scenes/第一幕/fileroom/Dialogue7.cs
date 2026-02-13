@@ -428,6 +428,13 @@ public class Dialogue7 : MonoBehaviour
             },
             new DialogueLine
             {
+                characterName = "提示",
+                characterSprite = null,
+                characterPosition = CharacterPosition.None,
+                dialogue = "返回你的小行星",
+            },
+            new DialogueLine
+            {
                 characterName = "Damsel",
                 characterSprite = DamselNormal,
                 characterPosition = CharacterPosition.Right,
@@ -440,4 +447,10 @@ public class Dialogue7 : MonoBehaviour
         this.enabled = false;
     }
 
+
+    public void Set()
+    {
+        ToDoor.SetActive(true);
+        this.enabled = false;
+    }
 }

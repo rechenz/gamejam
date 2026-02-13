@@ -499,6 +499,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4553035866448895823, guid: b4d77e44711cd4e47bc38659369b6930, type: 3}
+      propertyPath: useDoorSpawnPosition
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6081779967694360685, guid: b4d77e44711cd4e47bc38659369b6930, type: 3}
       propertyPath: m_Name
       value: Tele
@@ -704,7 +708,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 776, y: 146}
+  m_AnchoredPosition: {x: 354.8, y: 146}
   m_SizeDelta: {x: 318.88, y: 79.72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1787190287
@@ -737,8 +741,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -897,7 +901,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -776, y: 146}
+  m_AnchoredPosition: {x: -303.37, y: 146}
   m_SizeDelta: {x: 318.88, y: 79.72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2024108246
@@ -930,8 +934,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

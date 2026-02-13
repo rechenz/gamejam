@@ -495,12 +495,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 122210576}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bfc9009f8dd99b4cbbfc697e1c653a4, type: 3}
+  m_Script: {fileID: 11500000, guid: 05bdd8374f4a4a84eae6de8d61c3c8e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 1363394365}
-  interactionKey: 102
-  isInpointView: 0
+  DialogueID: Dialogue023
+  dialogueSprites: {fileID: 1771865638}
 --- !u!1001 &305654351
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1591,7 +1590,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1511202027}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9bfc9009f8dd99b4cbbfc697e1c653a4, type: 3}
   m_Name: 
@@ -1802,7 +1801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0955ce64f392fe4495c9e4a379d4403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueID: Dialogue008
+  DialogueID: Dialogue017
   dialogueSprites: {fileID: 1771865638}
   Learner: {fileID: 1861249736}
 --- !u!1001 &1861249735

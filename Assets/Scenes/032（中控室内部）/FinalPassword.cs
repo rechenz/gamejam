@@ -49,6 +49,7 @@ public class FinalPassword : MonoBehaviour
 
     void Unlock()
     {
+        dialogue.StartDialogue();
         Destroy(currentLockInstance);
         currentLockInstance = null;
         this.enabled = false;

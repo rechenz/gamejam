@@ -28,6 +28,7 @@ public class Dialogue015 : MonoBehaviour
         if (!SimpleStateManager.Instance.LoadBool("Seed", "hasSeed", false))
         {
             this.enabled = false;
+            return;
         }
         bool isRead = SimpleStateManager.Instance.LoadBool(DialogueID, "isRead", false);
         if (isRead)

@@ -42,7 +42,7 @@ public class UpdateUI : MonoBehaviour
 
     public void ifDeath()
     {
-        SceneManager.LoadScene("DeathScene");
+        SceneManager.LoadScene("DeathScene 1");
     }
 
     public void PointDecrease()
