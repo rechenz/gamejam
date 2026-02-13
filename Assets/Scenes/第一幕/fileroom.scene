@@ -790,7 +790,7 @@ MonoBehaviour:
   allowedDirection: 0
   teleportDelay: 0
   playSound: 1
-  teleportSound: {fileID: 0}
+  teleportSound: {fileID: 8300000, guid: 57a0d2438b5b0604dbec709eaf0a9c34, type: 3}
   showDebug: 0
   gizmoColor: {r: 0.2, g: 0.8, b: 1, a: 0.5}
   isInRange: 0
@@ -1015,9 +1015,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3407659465883746802, guid: 236f41cdbc6814749a076770c2948274, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3706367023324720977, guid: 236f41cdbc6814749a076770c2948274, type: 3}
       propertyPath: m_Name
       value: Damsel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706367023324720977, guid: 236f41cdbc6814749a076770c2948274, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2381,7 +2389,7 @@ MonoBehaviour:
   allowedDirection: 0
   teleportDelay: 0
   playSound: 1
-  teleportSound: {fileID: 0}
+  teleportSound: {fileID: 8300000, guid: 57a0d2438b5b0604dbec709eaf0a9c34, type: 3}
   showDebug: 0
   gizmoColor: {r: 0.2, g: 0.8, b: 1, a: 0.5}
   isInRange: 0

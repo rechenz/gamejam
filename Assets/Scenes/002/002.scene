@@ -754,7 +754,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1019292558066371442, guid: b4d77e44711cd4e47bc38659369b6930, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.08
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1019292558066371442, guid: b4d77e44711cd4e47bc38659369b6930, type: 3}
       propertyPath: m_LocalPosition.z
@@ -790,7 +790,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4553035866448895823, guid: b4d77e44711cd4e47bc38659369b6930, type: 3}
       propertyPath: defaultPosition.y
-      value: -2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553035866448895823, guid: b4d77e44711cd4e47bc38659369b6930, type: 3}
+      propertyPath: useDoorSpawnPosition
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6081779967694360685, guid: b4d77e44711cd4e47bc38659369b6930, type: 3}
       propertyPath: m_Name

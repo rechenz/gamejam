@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class pointView : MonoBehaviour
@@ -9,20 +8,18 @@ public class pointView : MonoBehaviour
     [Header("常规显示列表")]
     public List<SpriteRenderer> pointViewList1 = new List<SpriteRenderer>();
     public List<Behaviour> pointVeiwActive1 = new List<Behaviour>();
-
     public List<GameObject> pointVeiwAct1 = new List<GameObject>();
+
     [Header("特殊显示列表")]
     public List<SpriteRenderer> pointViewList2 = new List<SpriteRenderer>();
     public List<Behaviour> pointVeiwActive2 = new List<Behaviour>();
     public List<GameObject> pointVeiwAct2 = new List<GameObject>();
 
-    // Start is called before the first frame update
     void Start()
     {
         isInpointView = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Q))
@@ -36,57 +33,132 @@ public class pointView : MonoBehaviour
     {
         if (isInpointView)
         {
-            foreach (SpriteRenderer pointView in pointViewList1)
-            {
-                pointView.enabled = false;
-            }
-            foreach (Behaviour pointView in pointVeiwActive1)
-            {
-                pointView.enabled = false;
-            }
-            foreach (GameObject pointView in pointVeiwAct1)
-            {
-                pointView.SetActive(false);
-            }
-            foreach (SpriteRenderer pointView in pointViewList2)
-            {
-                pointView.enabled = true;
-            }
-            foreach (Behaviour pointView in pointVeiwActive2)
-            {
-                pointView.enabled = true;
-            }
-            foreach (GameObject pointView in pointVeiwAct2)
-            {
-                pointView.SetActive(true);
-            }
+            // 关闭列表1
+            SetListActive(pointViewList1, false);
+            SetBehaviourListActive(pointVeiwActive1, false);
+            SetGameObjectListActive(pointVeiwAct1, false);
+
+            // 开启列表2
+            SetListActive(pointViewList2, true);
+            SetBehaviourListActive(pointVeiwActive2, true);
+            SetGameObjectListActive(pointVeiwAct2, true);
         }
         else
         {
-            foreach (SpriteRenderer pointView in pointViewList1)
+            // 开启列表1
+            SetListActive(pointViewList1, true);
+            SetBehaviourListActive(pointVeiwActive1, true);
+            SetGameObjectListActive(pointVeiwAct1, true);
+
+            // 关闭列表2
+            SetListActive(pointViewList2, false);
+            SetBehaviourListActive(pointVeiwActive2, false);
+            SetGameObjectListActive(pointVeiwAct2, false);
+        }
+    }
+
+    // ✅ 安全处理 SpriteRenderer 列表
+    private void SetListActive(List<SpriteRenderer> list, bool active)
+    {
+        for (int i = list.Count - 1; i >= 0; i--)  // 从后往前遍历
+        {
+            if (list[i] == null)
             {
-                pointView.enabled = true;
+                list.RemoveAt(i);  // 移除空引用
+                continue;
             }
-            foreach (Behaviour pointView in pointVeiwActive1)
+
+            if (list[i] != null && list[i].gameObject != null)
             {
-                pointView.enabled = true;
+                list[i].enabled = active;
             }
-            foreach (GameObject pointView in pointVeiwAct1)
+            else
             {
-                pointView.SetActive(true);
+                list.RemoveAt(i);  // 物体已销毁，移除引用
             }
-            foreach (SpriteRenderer pointView in pointViewList2)
+        }
+    }
+
+    // ✅ 安全处理 Behaviour 列表（Collider、MonoBehaviour等）
+    private void SetBehaviourListActive(List<Behaviour> list, bool active)
+    {
+        for (int i = list.Count - 1; i >= 0; i--)
+        {
+            if (list[i] == null)
             {
-                pointView.enabled = false;
+                list.RemoveAt(i);
+                continue;
             }
-            foreach (Behaviour pointView in pointVeiwActive2)
+
+            if (list[i] != null && list[i].gameObject != null)
             {
-                pointView.enabled = false;
+                list[i].enabled = active;
             }
-            foreach (GameObject pointView in pointVeiwAct2)
+            else
             {
-                pointView.SetActive(false);
+                list.RemoveAt(i);
             }
+        }
+    }
+
+    // ✅ 安全处理 GameObject 列表
+    private void SetGameObjectListActive(List<GameObject> list, bool active)
+    {
+        for (int i = list.Count - 1; i >= 0; i--)
+        {
+            if (list[i] == null)
+            {
+                list.RemoveAt(i);
+                continue;
+            }
+
+            if (list[i] != null)
+            {
+                list[i].SetActive(active);
+            }
+            else
+            {
+                list.RemoveAt(i);
+            }
+        }
+    }
+
+    // ✅ 可选：在 Inspector 中点击按钮清理空引用
+    [ContextMenu("清理空引用")]
+    private void CleanNullReferences()
+    {
+        CleanList(pointViewList1);
+        CleanBehaviourList(pointVeiwActive1);
+        CleanGameObjectList(pointVeiwAct1);
+
+        CleanList(pointViewList2);
+        CleanBehaviourList(pointVeiwActive2);
+        CleanGameObjectList(pointVeiwAct2);
+
+        Debug.Log("空引用清理完成！");
+    }
+
+    private void CleanList(List<SpriteRenderer> list)
+    {
+        for (int i = list.Count - 1; i >= 0; i--)
+        {
+            if (list[i] == null) list.RemoveAt(i);
+        }
+    }
+
+    private void CleanBehaviourList(List<Behaviour> list)
+    {
+        for (int i = list.Count - 1; i >= 0; i--)
+        {
+            if (list[i] == null) list.RemoveAt(i);
+        }
+    }
+
+    private void CleanGameObjectList(List<GameObject> list)
+    {
+        for (int i = list.Count - 1; i >= 0; i--)
+        {
+            if (list[i] == null) list.RemoveAt(i);
         }
     }
 }

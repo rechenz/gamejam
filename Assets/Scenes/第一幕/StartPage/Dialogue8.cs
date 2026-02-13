@@ -29,15 +29,18 @@ public class Dialogue8 : MonoBehaviour
         if (!SimpleStateManager.Instance.LoadBool("Dialogue007", "isRead", false))
         {
             this.enabled = false;
+            return;
         }
         bool isRead = SimpleStateManager.Instance.LoadBool(DialogueID, "isRead", false);
         if (isRead)
         {
             // Destroy(gameObject);
             this.enabled = false;
+            return;
         }
         else
         {
+            StartDialogue();
             SetBegin();
         }
     }

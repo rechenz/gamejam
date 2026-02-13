@@ -26,6 +26,11 @@ public class Dialogue014 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (!SimpleStateManager.Instance.LoadBool("Dialogue012", "isRead", false))
+        {
+            this.enabled = false;
+            return;
+        }
         bool isRead = SimpleStateManager.Instance.LoadBool(DialogueID, "isRead", false);
         if (isRead)
         {
