@@ -122,6 +122,21 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/032\uFF08\u4E2D\u63A7\u5BA4\u5185\u90E8\uFF09/032.scene"
     guid: e9ee95b3f15f36f4fac25e0395f53e39
+  - enabled: 1
+    path: Assets/Scenes/Finals/EndsChoice.scene
+    guid: 31dfeca39b62dbe4d9e1f2eaea8fc805
+  - enabled: 1
+    path: Assets/Scenes/Finals/Continue1.scene
+    guid: ef54f622bbb3c254b9121771139b7da6
+  - enabled: 1
+    path: Assets/Scenes/Finals/Continue2.scene
+    guid: 5af4564561e959942a0a1bae40f1839c
+  - enabled: 1
+    path: Assets/Scenes/Finals/DeathScene.scene
+    guid: 993fe42ecc49dfb4d957667ab0c2d6f5
+  - enabled: 1
+    path: Assets/Scenes/Finals/ReStart.scene
+    guid: 177ac3d64417c1541a3093a6ccc0dc31
   m_BuildProfiles: []
   m_configObjects: {}
   m_SlimFeaturesWeixinMiniGame:

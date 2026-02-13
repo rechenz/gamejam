@@ -213,7 +213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetScene: 032
-  spawnPosition: {x: 0.52, y: -2}
+  spawnPosition: {x: 19.72, y: -2}
   colliderOffset: {x: 0, y: 0}
   colliderSize: {x: 2.15, y: 4.34}
   triggerTag: Player
@@ -576,8 +576,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4553035866448895823, guid: b4d77e44711cd4e47bc38659369b6930, type: 3}
+      propertyPath: defaultPosition.x
+      value: 11.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553035866448895823, guid: b4d77e44711cd4e47bc38659369b6930, type: 3}
       propertyPath: defaultPosition.y
       value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553035866448895823, guid: b4d77e44711cd4e47bc38659369b6930, type: 3}
+      propertyPath: useDoorSpawnPosition
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6081779967694360685, guid: b4d77e44711cd4e47bc38659369b6930, type: 3}
       propertyPath: m_Name
