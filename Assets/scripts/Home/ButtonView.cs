@@ -185,6 +185,13 @@ public class StartMenuButtons : MonoBehaviour
     //额外方法，用于清理记忆项
     private void Clear()
     {
-        SimpleStateManager.Instance.ClearStates();
+        if (SimpleStateManager.Instance != null)
+        {
+            SimpleStateManager.Instance.ClearStates();
+        }
+        else
+        {
+            Debug.LogWarning("SimpleStateManager.Instance is null, cannot clear states");
+        }
     }
 }
