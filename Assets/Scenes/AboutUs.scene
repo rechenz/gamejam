@@ -182,7 +182,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u7F08\uFF08\u7B56\u5212\uFF09\u3001\u7EFF\u8C46\u51B0\uFF08\u7F8E\u672F\uFF09\u3001\u4E00\u9897\u82BD\u83DC\uFF08\u7F8E\u672F\uFF09\u3001\u70ED\u5C18\uFF08\u7A0B\u5E8F\uFF09\u3001GEORGEWU\uFF08\u7A0B\u5E8F\uFF09"
+  m_text: "\u7F08\uFF08\u7B56\u5212\uFF09\u3001\u963F\u6C27\uFF08\u7F8E\u672F\uFF09\u3001\u4E00\u9897\u82BD\u83DC\uFF08\u7F8E\u672F\uFF09\u3001\u70ED\u5C18\uFF08\u7A0B\u5E8F\uFF09\u3001GEORGEWU\uFF08\u7A0B\u5E8F\uFF09"
   m_enableAdvanceTextProcess: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e92891dda8215ad4ebf02900cdc8966c, type: 2}
